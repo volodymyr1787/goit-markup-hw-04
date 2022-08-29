@@ -18,9 +18,6 @@
 }
 
 body {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1600px;
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
 
@@ -60,12 +57,12 @@ img {
 
 /* хедер */
 .header {
+    border-bottom: 1px solid #ECECEC;
 }
 
 .page-header {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
 }
 
 .navigation {
@@ -132,8 +129,6 @@ img {
     display: block;
     display: flex;
     margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .contacts .item + .item {
@@ -143,6 +138,7 @@ img {
 
 .contacts .link {
     padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--item-text-color);
 
     text-decoration: none;
@@ -159,7 +155,6 @@ img {
 
 
 .hero {
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background: var(--dark-fon);
@@ -170,6 +165,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
+    padding-bottom: 200px;
 
     font-weight: 900;
     font-size: 44px;
@@ -182,6 +178,8 @@ img {
 }
 
 .hero .btn {
+    display: block;
+    border: none;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -198,7 +196,6 @@ img {
 
     background: var(--accent-color);
 
-    display: flex;
     align-items: center;
     letter-spacing: 0.06em;
     
@@ -207,6 +204,10 @@ img {
 }
 
 /* section */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .section-title {
     font-weight: 700;
@@ -238,7 +239,6 @@ img {
 
 .feature-list {
     display: flex;
-    padding-top: 94px;
 }
 
 .feature-list .title {
@@ -264,11 +264,10 @@ img {
 
 .work-list {
     display: flex;
-    padding-top: 50px;
+    margin-top: 50px;
 }
 
 .section-title {
-    padding-top: 94px;
 }
 
 .work-list .blok:not(:last-child) {
@@ -277,11 +276,8 @@ img {
 
 /* Наша команда */
 
-.container-fon {
-background: var(--grey-fon);
-}
-
 .team {
+    background: var(--grey-fon);
 }
 
 .card {
@@ -290,8 +286,7 @@ background: var(--grey-fon);
 
 .teamcard-list {
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 94px;
+    margin-top: 50px;
 }
 
 .teamcard-list .card:not(:last-child) {
@@ -316,7 +311,8 @@ background: var(--grey-fon);
 
 .card-text {
     display: block;
-    padding: 30px 62px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* footer */
@@ -367,7 +363,7 @@ background: var(--grey-fon);
 
 /* портфоліо */
 
-.hero-next {
+.hero-portfolio {
     position: absolute;
         width: 1px;
         height: 1px;
@@ -383,7 +379,6 @@ background: var(--grey-fon);
 .filter-list {
     display: flex;
     justify-content: center;
-    padding-top: 94px;
 }
 
 .filter-list .blok:not(:last-child) {
@@ -418,10 +413,8 @@ background: var(--grey-fon);
 .project-list {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 50px;
-    padding-bottom: 94px;
+    margin-top: 50px;
     background: var(--primary-white-color);
-    border: 0px solid var(--light-fon);
 }
 
 .project-list .title {
@@ -457,6 +450,7 @@ background: var(--grey-fon);
     padding: 20px 24px;
     width: 370px;
     height: 110px;
+    border-top: none;
     border: 1px solid #EEEEEE;
 }
 
