@@ -8,7 +8,7 @@
     --dark-fon: #2F303A;
     --grey-fon: #F5F4FA;
     --light-fon: #EEEEEE;
-
+    --logo-fill: #AFB1B8;
 }
 
 *,
@@ -137,8 +137,12 @@ img {
 
 
 .contacts .link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     padding-top: 32px;
     padding-bottom: 32px;
+
     color: var(--item-text-color);
 
     text-decoration: none;
@@ -149,6 +153,16 @@ img {
     color: var(--accent-color);
 }
 
+.contact-logo {
+    fill: none;
+    stroke: var(--item-text-color);
+}
+
+.contacts .link:hover .contact-logo,
+.contacts .link:focus .contact-logo {
+    stroke: var(--accent-color);
+}
+
 /* main */
 
 /* hero */
@@ -157,15 +171,24 @@ img {
 .hero {
     margin-left: auto;
     margin-right: auto;
-    background: var(--dark-fon);
+    background-color: var(--dark-fon);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/Img-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+.hero-blok{
+    padding: 200px 0;
+}
 .hero-title {
     width: 696px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
 
     font-weight: 900;
     font-size: 44px;
@@ -237,6 +260,19 @@ img {
         overflow: hidden;
 }
 
+.pictures {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    
+    width: 270px;
+    height: 120px;
+    
+    background-color: var(--grey-fon);
+    border-radius: 4px;
+}
+
 .feature-list {
     display: flex;
 }
@@ -256,6 +292,11 @@ img {
 
 .feature-list .item {
     line-height: 1.71;
+}
+
+.logo-blok {
+    background: var(--grey-fon);
+    padding: ;
 }
 
 /* Чим ми займаємося */
@@ -295,6 +336,7 @@ img {
 
 .teamcard-list .title {
     margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -304,9 +346,12 @@ img {
 }
 
 .teamcard-list .item {
+    margin-bottom: 16px;
+
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+
 }
 
 .card-text {
@@ -315,12 +360,84 @@ img {
     padding-bottom: 30px;
 }
 
+.soc-networks {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    background-color: var(--primary-white-fon);
+    border-radius: 50%;
+}
+
+.soc-link:hover,
+:focus {
+    background-color: var(--accent-color);
+
+}
+
+.soc-link:hover .logo-link {
+    fill: var(--white-text-color);
+}
+
+.soc-link:focus .logo-link {
+    fill: var(--white-text-color);
+}
+
+.logo-link {
+    fill: var(--logo-fill);
+}
+
+
+.partners {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.partner-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 170px;
+    height: 92px;
+    
+    background-color: var(--primary-white-fon);
+    border: 1px solid var(--logo-fill);
+    border-radius: 4px;
+}
+
+.partner-link:hover,
+.partner-link:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.partner-logo {
+    fill: var(--logo-fill);
+}
+
+.partner-link:hover .partner-logo,
+.partner-link:focus .partner-logo {
+    fill: var(--accent-color);
+}
+
 /* footer */
 
 .footer {
     background: var(--dark-fon);
     padding-bottom: 60px;
     padding-top: 60px;
+}
+
+.logo-footer {
 }
 
 .footer .logo-studio {
@@ -360,6 +477,28 @@ img {
     color: var(--accent-color);
 }
 
+.footer-blocks {
+    display: flex;
+    gap: 70px;
+}
+
+.footer-socials {
+    padding-top: 12px;
+}
+
+.footer-socials .title {
+    margin-bottom: 20px;
+
+    color: var(--white-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.footer-soc {
+    background: rgba(255, 255, 255, 0.1);
+}
 
 /* портфоліо */
 
