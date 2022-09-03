@@ -102,7 +102,9 @@ img {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+
     color: var(--primary-text-color);
+
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -122,6 +124,7 @@ img {
 .site-nav .link:focus {
     color: var(--accent-color);
     background: var(--primary-white-fon);
+    box-shadow: none;
 }
 
 .site-nav .link.current {
@@ -157,6 +160,7 @@ img {
 .contacts .link:focus {
     color: var(--accent-color);
     background: var(--primary-white-fon);
+    box-shadow: none;
 }
 
 .contact-logo {
