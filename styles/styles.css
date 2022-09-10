@@ -312,7 +312,9 @@ img {
 
 /* Чим ми займаємося */
 
-
+.section.work-section {
+    padding-top: 0;
+}
 
 .work-list {
     display: flex;
